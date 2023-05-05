@@ -1,3 +1,13 @@
+/*
+    *** Getter and Setter ***
+      => If we want to get from any variable from class even if it protected or private,
+      we can use getter.
+      
+      => If we want to set from any variable from class even if it protected or private,
+      we can use setter.
+
+*/
+
 class BankAccount {
   public readonly id: number;
   public name: string;
@@ -33,16 +43,12 @@ class BankAccount {
   // }
 }
 
-class StudentAccount extends BankAccount {
-  test() {
-     this.
-  }
-}
 
 const myAccount = new BankAccount(444, "Persian", 30);
 // myAccount.addDeposit(20);
 // myAccount.getBalance();
 // myAccount.getBalance();
-console.log(myAccount.balance);
-myAccount.deposit = 30;
+console.log(myAccount.balance); // we do not need to say, myAccount.balance(), even if it method
+// myAccount.deposit(30 ) -> we do not need to say, myAccount.balance(30), even if it method
+myAccount.deposit = 30; // just write this way if we setter.
 console.log(myAccount.balance);
