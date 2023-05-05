@@ -18,6 +18,12 @@
 
 
 */
+
+/*
+  *** takeNap is the same method of different class,
+  but it show and gives different output, it's called
+  polymorphisam 
+*/
 class Person {
   takeNap(): void { // same method
     console.log("I am sleeping 8 hours per day");
