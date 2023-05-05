@@ -22,13 +22,13 @@ const result3 = createArray1<Name, boolean>({ name: "Bangladesh" }, false);
 
 // const newData = {...myInfo ,crush};
 const addMeInMyCrushMind = <T>(myInfo: T) => {
-  const crush = "kate Winslet";
+  const crush = "k";
   const newData = { ...myInfo, crush };
   return newData;
 };
 
 const myInfo = {
-  name: "Persian",
+  name: "P",
   age: 100,
   salary: 100000000,
 };

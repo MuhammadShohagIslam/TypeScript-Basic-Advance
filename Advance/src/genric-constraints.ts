@@ -8,7 +8,7 @@ interface MandatoryInterface {
 }
 
 const addMeInMyCrushMind = <T extends MandatoryInterface>(myInfo: T) => {
-  const crush = "kate Winslet";
+  const crush = "k";
   const newData = { ...myInfo, crush };
   return newData;
 };
@@ -21,7 +21,7 @@ type MyInFoType = {
   other2: null;
 };
 const myInfo = {
-  name: "Persian",
+  name: "P",
   age: 100,
   salary: 100000000,
   other1: false,

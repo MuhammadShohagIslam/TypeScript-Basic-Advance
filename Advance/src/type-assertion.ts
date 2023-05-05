@@ -40,11 +40,11 @@
 // const generic3: ArrayType<Name>=[{name:'Persian'},{age:'i'}]
 
 // interface CrushInterface<T>{
-//   name:'Kate Winslet',
+//   name:'K',
 //   husband:T
 // }
 
-// const husband1 :CrushInterface<boolean> = {name:'Kate Winslet',husband:true}
+// const husband1 :CrushInterface<boolean> = {name:'K',husband:true}
 
 // const rollNumbers1: Array<number> = [1, 4, 7];
 // const rollNumbers2: Array<string> = ["1", "2"];
@@ -59,12 +59,12 @@
 // const array2 = makeArray("5", 6);
 
 // const addMeToCrushMind = (param: object) => {
-//   const crushName = "Kate Winslet";
+//   const crushName = "K";
 //   const newMind = { ...param, crushName };
 //   return newMind;
 // };
 const addMeToCrushMind = <T extends { name: string }>(param: T) => {
-  const crushName = "Kate Winslet";
+  const crushName = "K";
   const newMind = { ...param, crushName };
   return newMind;
 };

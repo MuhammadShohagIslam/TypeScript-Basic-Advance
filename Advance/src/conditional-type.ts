@@ -29,8 +29,8 @@ type CheckWife2 = CheckProperty<Sheikh, "girlfriend">;
 
 //Matha Kharap Example
 
-type Bandhubi = "Monika" | "Rachel" | "Pheobe";
+type Bandhubi = "Monika" | "R" | "P";
 
 type RemoveBadhubi<T, K> = T extends K ? never : T;
 
-type CurrentBandhubi = RemoveBadhubi<Bandhubi, "Rachel">;
+type CurrentBandhubi = RemoveBadhubi<Bandhubi, "R">;

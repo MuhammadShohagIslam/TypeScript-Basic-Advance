@@ -1,6 +1,6 @@
 type GenericTuple<X, Y> = [X, Y];
 
-const relation: GenericTuple<string, string> = ["Persian", "Kate Winslet"];
+const relation: GenericTuple<string, string> = ["P", "K"];
 
 // type RelationWithSalaryType = { name: string; salary: number };
 
@@ -11,18 +11,18 @@ interface RelationWithSalaryInterface {
 
 const relationWithSalary: GenericTuple<RelationWithSalaryInterface, string> = [
   {
-    name: "Persian",
+    name: "P",
     salary: 1000000000,
   },
-  "Kate Winslet",
+  "K",
 ];
 
 const relationWithSalary2: GenericTuple<RelationWithSalaryType, string> = [
   {
-    name: "Persian",
+    name: "P",
     salary: 1000000000,
   },
-  "Kate Winslet",
+  "K",
 ];
 
 type GenericArray<T> = Array<T>;
