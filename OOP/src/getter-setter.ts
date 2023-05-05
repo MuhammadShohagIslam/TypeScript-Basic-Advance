@@ -2,9 +2,12 @@
     *** Getter and Setter ***
       => If we want to get from any variable from class even if it protected or private,
       we can use getter.
-      
+
       => If we want to set from any variable from class even if it protected or private,
       we can use setter.
+
+      *** so through use getter and setter without calling directly function, 
+      we can modify value and access as a properties
 
 */
 
