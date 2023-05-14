@@ -1,3 +1,23 @@
+/*
+   *** Type Gurd ***
+    => TypeScript এ যখন টাইপ কে আমি বাধা দিব তখন এটাকে টাইম Gurd বলে
+    
+   *** keyof ***
+    => keyof gurd সবসময় runtime এ কাজ করে
+    => if it check type of this properties
+    
+   *** in Gurd ***
+    => this always to use object
+    
+   *** instance of gurd***
+    => এটা class এবং object কে gurd করে
+    
+   *** advantange ***
+    => without type alias use for type cheacking, we can use type gurd
+    => type alias is the best practice
+    => এই type এর উপর ভিত্তি করে আমরা এর যথাযথ properties access করতে পারে
+*/
+
 //keyof guard
 type Alphaneumeric = string | number;
 // keyof guard
@@ -24,6 +44,7 @@ type AdminUserType = {
 };
 
 function getUser(user: NormalUserType | AdminUserType): string {
+  // check role has into user, role is object property
   if ("role" in user) {
     return `I am an admin and my role is ${user.role}`;
   } else {
@@ -69,15 +90,43 @@ class Cat extends Animal {
   }
 }
 
+
+// checking 'type' with function
+// when we want to check type, we should use is, like 'animal is Dog'
 function isDog(animal: Animal): animal is Dog {
   return animal instanceof Dog;
 }
+//or
+function isDog(animal: Animal): boolean {
+  return animal instanceof Dog;
+}
 
+// checking 'type' with function
+// when we want to check type, we should use is, like 'animal is Cat'
 function isCat(animal: Animal): animal is Cat {
+  return animal instanceof Cat;
+}
+//or
+// checking 'type' with function
+function isCat(animal: Animal): boolean {
   return animal instanceof Cat;
 }
 
 function getAnimal(animal: Animal) {
+  
+  /*
+    // checking aniaml is come from Dog class or not
+    // instanceof type gurd, we can access method, properties from class
+    if (animal instanceof Dog)) {
+      animal.makeBark();
+    } else if (animal instanceof Cat) {
+      animal.makeMeaw();
+    } else {
+      animal.makeSound();
+    }
+  */
+  
+  // checking 'type' with isDog function
   if (isDog(animal)) {
     animal.makeBark();
   } else if (isCat(animal)) {
