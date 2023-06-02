@@ -1,3 +1,12 @@
+/*
+    *** What is object ***
+    => Object is a collection of properties where each propert is a key-value pair. key is always string
+      and name of the property. and value will be any kind of data type.
+    => Class is the blue print or template of the object that describes properties and behaivour of the object.
+
+*/
+
+
 class Animal {
   // name:string
   // species:string
